@@ -1,0 +1,112 @@
+
+body{
+background-image: url(https://source.unsplash.com/1600x900/?white);
+
+}
+
+
+.daily-qoute{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+.main-quotes{
+    width: 50%;
+    border: none;
+    padding: 10px;
+
+    justify-content: center;
+    
+/*     
+    width: 60%;
+    height: 30%;
+    background-color: cornflowerblue; */
+}
+
+
+
+
+h5{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-end{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    float: right;
+    
+}
+
+.quote{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+}
+.new-quotes-but{
+    background-color: rgba(6, 155, 241, 0.932);
+    height: 50px;
+    width: 160px;
+    border-radius: 10px;
+    font-size: 20px;
+    color:whitesmoke;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    background-color: rgba(255, 2, 65, 0.973);
+    
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+    body{
+        background-image: url(https://source.unsplash.com/600x900/?night);
+
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .main-quotes{
+      margin: auto;
+      width: auto;
+      border: none;
+      justify-content: center;
+      color:white;
+      font-size: 40px;
+      
+      
+    }
+  }
+/* Top name */
+ @media screen  and (max-width:600px) {
+    .daily-qoute{ 
+        margin-top: 0px;
+        color: white;
+        
+        
+    
+    }
+ }
+
+    
+@media screen and (max-width:600px) {
+    .new-quotes-but{
+        background-color: rgba(250, 4, 147, 0.87);
+        
+     
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .div-but{
+        position: center;
+        padding-top: 80px;
+        
+    }
+}
+
+  daily-qoute

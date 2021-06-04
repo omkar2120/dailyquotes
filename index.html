@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Quotes</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> --> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="card text">
+        <center> <h5 class="daily-qoute">DailyQuotes...</h5></center><br>
+        
+        <center> <div class="main-quotes">
+           <div id="quotes-1"class="quote"></div><br><br>
+             <div id="author" class="text-end">Loading...</div>
+         
+          </div>
+        </center><br><br><br>
+        <div class="div-but">
+             <center> <button id="new-quotes" class="new-quotes-but">New Quotes</button></center>
+        </div>
+     </div>
+  
+
+</body>
+
+    <script>
+              const quotes = document.getElementById("quotes-1");
+              const auther = document.getElementById("author");
+              const newQuotes= document.getElementById("new-quotes");
+        let realData ="";
+      
+        const getNewQuotes = () => {
+            let rnum = Math.floor(Math.random() * 100 );
+            quotes.innerText = `${realData[rnum].text}`;
+            auther.innerText = `${realData[rnum].author}`;
+            console.log(realData[rnum].text);
+            console.log(realData[rnum].author)
+        };
+        
+        const getQuotes = async () => {
+            const api = "https://type.fit/api/quotes";
+            try {
+                let data = await fetch(api);
+                realData = await data.json();
+        
+                getNewQuotes();
+                 ///console.log(realData.length); 
+                 } catch(error) {}
+           
+        
+           newQuotes.addEventListener("click" , getNewQuotes);     // when click on newQuotes u ll get new quotes
+        };
+        getQuotes();
+          </script>
+
+
+</html>
