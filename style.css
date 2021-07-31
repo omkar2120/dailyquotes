@@ -50,7 +50,6 @@ h5{
     font-family: 'Nunito', sans-serif;
     border: none;
     cursor: pointer;
-    justify-content: center;
     background-color: rgba(255, 2, 65, 0.973);
     
 }
@@ -95,18 +94,15 @@ h5{
 @media screen and (max-width:600px) {
     .new-quotes-but{
         background-color: rgba(250, 4, 147, 0.87);
-        
+        position: fixed;
+        align-items: center;
      
     }
 }
 
 
 @media screen and (max-width:600px) {
-    .div-but{
-        position: center;
-        padding-top: 80px;
-        
-    }
+    .
 }
 
   daily-qoute
