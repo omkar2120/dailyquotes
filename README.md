@@ -1,2 +1,2 @@
-# dailyquotes
+# dailyquotes   
 # https://dailyquotess.netlify.app
