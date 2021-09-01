@@ -24,6 +24,6 @@
            
         
            newQuotes.addEventListener("click" , getNewQuotes);     // when click on newQuotes u ll get new quotes
-        };
+        };                                                                          
         getQuotes(); 
     
